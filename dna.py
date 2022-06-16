@@ -47,7 +47,7 @@ def main():
     with open(sys.argv[2], "r") as data2:
         sequence = data2.read()
 
-       # TODO: Find longest match of each STR in DNA sequence
+       # Find longest match of each STR in DNA sequence
 
     seq1 = str(longest_match(sequence, 'AGATC'))
     # print(seq1)
@@ -65,9 +65,8 @@ def main():
     # print(seq7)
     seq8 = str(longest_match(sequence, 'TCTG',))
     # print(seq8)
-    # TODO: Check database for matching profiles
-
-
+    
+    #Check database for matching profiles
     profile = [seq1, seq2, seq3, seq4, seq5, seq6, seq7, seq8]
     with open(sys.argv[1], "r") as data:
         dat = csv.reader(data)
