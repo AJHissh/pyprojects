@@ -82,7 +82,7 @@ print(sum_frame)
 ## Saves sum_frame dataframe to CSV
 # sum_frame.to_csv(r'/content/drive/MyDrive/Andrew/sum_avg.csv')
 
-## Turn timestamp into string and formats the time string value into am or pm
+## Turn timestamp into string and formats the time string value into am or pm and creates new am/pm column
 new_data['am/pm'] = new_data['Timestamp'].apply(lambda x: x.strftime('%p'))
 
 ## Removes compliance analyst as the index and makes it a column
